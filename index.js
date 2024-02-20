@@ -25,6 +25,7 @@ if(process.argv[2] === '--postman') {
     withelist.push(undefined)
 }
 
+console.log('WHITELIST:', withelist);
 const corsOptions = {
     origin: function(origin, callback) {
         if(withelist.includes(origin)) {
